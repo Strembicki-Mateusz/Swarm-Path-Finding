@@ -1,4 +1,10 @@
 function exp_array = array(Rows, Columns, Position, Target, CLOSED, h)
+% array - function which have to calculate which neighbour is the best to
+% move. It contains the position of robot and value of three heuristic
+% functions in this way:
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Position_X | Position_Y | h(n) | g(n) | f(n) %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 exp_array = [];
 counter = 1;

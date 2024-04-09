@@ -1,4 +1,7 @@
 function y = a_star(Rows, Columns, Grid, Target, Start)
+% a_start - heart of algorith. It compare values to create optimal way
+% with minimal cost which the robot goes to the target.
+
 
 OPEN = [];
 CLOSED = [];
