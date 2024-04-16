@@ -16,9 +16,9 @@ for i = 1:length(N)
 end
 
 % Set obstacles
-obstacles = ceil((rows*(columns-2)/randi([2 4])) + mod(rows*(columns-2)/randi([3 columns-2]),3));
+obstacles = ceil((rows*(columns-2)/randi([3 columns-2])) + mod(rows*(columns-2)/randi([3 columns-2]),3));
 
-for i = 1:ceil(obstacles*2/1.5)
+for i = 1:ceil(obstacles*4/3)
     x = randi([1 rows]);
     y = randi([2 columns-1]);
     if grid(x,y) ~= -1
