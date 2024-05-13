@@ -8,5 +8,5 @@ x = xy(1,1);
 y = xy(2,1);
 
 dis = sqrt((x_node - x)^2 + abs(y_node-y)^2);
-
+%dis = abs(x_node - x) + abs(y_node-y);
 end

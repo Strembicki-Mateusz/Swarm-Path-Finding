@@ -24,9 +24,9 @@ for i = -1:1:1
                     fn = heuristic(Position,Target,XY);
                     exp_array(counter,1) = XY(1,:);
                     exp_array(counter,2) = XY(2,:);
-                    exp_array(counter,3) = distance_a(Position,XY)+h;
+                    exp_array(counter,3) = distance_a(Position,XY)+fn(3,:);
                     exp_array(counter,4) = distance_a(XY,Target);
-                    exp_array(counter,5) = fn(3,:);
+                    exp_array(counter,5) = fn(1,:);
                     counter = counter + 1;
                 end
             end
