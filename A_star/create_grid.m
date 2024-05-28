@@ -16,7 +16,7 @@ for i = 1:N
 end
 
 % Set obstacles
-obstacles = ceil((rows*(columns-2)/randi([3 columns-2])) + mod(rows*(columns-2)/randi([3 columns-2]),3));
+obstacles = (rows*(columns-2)/randi([3 columns-2]) + mod(rows*(columns-2)/randi([3 columns-2]),3));
 
 for i = 1:ceil(obstacles*4/3)
     x = randi([1 rows]);

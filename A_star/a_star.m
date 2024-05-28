@@ -28,12 +28,14 @@ for i = 1:Rows
     for j = 1:Columns
         if Grid(i,j) == -2
             fn = heuristic(Start, Target, Position);
+            %fn = heuristic(Start, Target, Position,.2);
             OPEN(endOPEN,:) = insert_open(Start,Position,fn);
             OPEN(endOPEN,1) = 0;
         end
     end
 end
 fn = heuristic(Start, Target, Position);
+%fn = heuristic(Start, Target, Position,.2);
 endCLOSED = endCLOSED + 1;
 CLOSED(endCLOSED,1) = Position(1,:);
 CLOSED(endCLOSED,2) = Position(2,:);
